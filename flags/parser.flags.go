@@ -141,5 +141,6 @@ func isFloatSlice(val reflect.Value) ([]float64, bool) {
 	if v, ok := val.Interface().([]float64); ok {
 		return v, true
 	}
+
 	return nil, false
 }
